@@ -12,6 +12,8 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'majutsushi/tagbar'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'Lokaltog/vim-easymotion'
 
 
 
@@ -30,15 +32,6 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-
-nnoremap ; :
-nnoremap : ;
-
-set history=50		" keep 50 lines of command line history
-set ruler		" show the cursor position all the time
-set showcmd		" display incomplete commands
-set incsearch		" do incremental searching
-
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if &t_Co > 2 || has("gui_running")
@@ -46,10 +39,73 @@ if &t_Co > 2 || has("gui_running")
   set hlsearch
 endif
 
+
+nnoremap ; :
+nnoremap : ;
+
+let mapleader = ","
+
+syntax enable
+let base16colorspace=256
+set background=dark
+let g:solarized_visibility = "high"
+let g:solarized_contrast = "normal"
+let g:solarized_termcolors=16
+let g:solarized_termtrans=1
+colorscheme solarized
+
+set history=50		" keep 50 lines of command line history
+set ruler		" show the cursor position all the time
+set showcmd		" display incomplete commands
+set incsearch		" do incremental searching
+
+map <Leader>l <Plug>(easymotion-lineforward)
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+map <Leader>h <Plug>(easymotion-linebackward)
+map <Leader>s <Plug>(easymotion-s2)
+
+autocmd BufWinLeave * call clearmatches()
+
+" Reload vimrc on write
+augroup reload_vimrc
+   autocmd!
+   autocmd BufWritePost $MYVIMRC source $MYVIMRC
+augroup END
+
+" Line Wraps
+set showbreak=⇇
+
+" No Ex Mode
+nnoremap Q <NOP>
+
+" Clear highlighting
+nnoremap <silent> <leader><space> :noh<cr>
+
+" Vert split for showbuffer
+command! -nargs=1 Vsb :vert sb<f-args>
+
+set ignorecase
+set visualbell t_vb=
+set relativenumber
+set nu
+set cursorline
 set undolevels=20
-set number
-"set expandtab
-set tabstop=2
-set shiftwidth=2
+set tabstop=3
+set shiftwidth=3
 set smarttab
-fixdel
+
+" Window splitting stuff
+set splitbelow
+set splitright
+
+
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" use mouse and scroll wheel
+set mouse=a
+map <xCSI>[62~ <MouseDown>
+
