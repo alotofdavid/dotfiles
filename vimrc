@@ -48,7 +48,7 @@ let mapleader = ","
 syntax enable
 let base16colorspace=256
 set background=dark
-let g:solarized_visibility = "high"
+let g:solarized_visibility = "normal"
 let g:solarized_contrast = "normal"
 let g:solarized_termcolors=16
 let g:solarized_termtrans=1
@@ -106,6 +106,5 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 " use mouse and scroll wheel
-set mouse=a
 map <xCSI>[62~ <MouseDown>
 

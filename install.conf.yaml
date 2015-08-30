@@ -28,3 +28,7 @@
     ~/.oh-my-zsh:
         path: oh-my-zsh
         relink: true
+
+- shell:
+   - [git submodule update --init --recursive, Installing submodules]
+   - [vim -c "VundleInstall", Installing vim plugins]
