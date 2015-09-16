@@ -4,7 +4,7 @@
 [push]
 	default = simple
 [core]
-	editor = ~/davidadams/bin/vimgit
+	editor = ~/bin/vimgit
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f

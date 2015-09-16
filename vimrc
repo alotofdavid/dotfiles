@@ -14,12 +14,17 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'majutsushi/tagbar'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'Lokaltog/vim-easymotion'
+Plugin 'vim-scripts/lid.vim'
 
 
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+set expandtab
+
+
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
@@ -44,6 +49,9 @@ nnoremap ; :
 nnoremap : ;
 
 let mapleader = ","
+
+" Tagbar
+nnoremap <Leader>t :TagbarToggle<CR>
 
 syntax enable
 let base16colorspace=256

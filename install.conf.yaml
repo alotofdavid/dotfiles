@@ -3,32 +3,24 @@
 - link:
     ~/.dotfiles:
         path: ''
-        relink: true
     ~/.tmux.conf:
         path: tmux.conf
-        relink: true
     ~/.zshrc:
         path: zshrc
-        relink: true
     ~/.vimrc:
         path: vimrc
-        relink: true
     ~/.bashrc:
         path: bashrc
-        relink: true
     ~/bin:
         path: bin/
-        relink: true
     ~/.vim:
         path: vim/
-        relink: true
     ~/.gitconfig:
         path: gitconfig
-        relink: true
     ~/.oh-my-zsh:
         path: oh-my-zsh
-        relink: true
+    ~/.zshenv:
+         path: zshenv
 
 - shell:
-   - [git submodule update --init --recursive, Installing submodules]
-   - [vim -c "VundleInstall", Installing vim plugins]
+    - [git submodule update --init --recursive, Installing submodules]
