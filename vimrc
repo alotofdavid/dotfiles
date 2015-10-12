@@ -15,7 +15,8 @@ Bundle 'majutsushi/tagbar'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'vim-scripts/lid.vim'
-
+Plugin 'lervag/vimtex'
+Plugin 'derekwyatt/vim-scala'
 
 
 " All of your Plugins must be added before the following line
@@ -23,6 +24,7 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 set expandtab
+set ruler
 
 
 " To ignore plugin indent changes, instead use:
@@ -67,7 +69,7 @@ set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 
-map <Leader>l <Plug>(easymotion-lineforward)
+"map <Leader>l <Plug>(easymotion-lineforward)
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 map <Leader>h <Plug>(easymotion-linebackward)
@@ -99,8 +101,8 @@ set relativenumber
 set nu
 set cursorline
 set undolevels=20
-set tabstop=3
-set shiftwidth=3
+set tabstop=4
+set shiftwidth=4
 set smarttab
 
 " Window splitting stuff

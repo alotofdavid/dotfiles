@@ -5,6 +5,12 @@ export PYTHONPATH=/Users/davidadams/Documents/Code/python/rubik:$PYTHONPATH
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="$PATH:$HOME/bin"
 
+# Add GHC 7.10.2 to the PATH, via https://ghcformacosx.github.io/
+export GHC_DOT_APP="/Applications/ghc-7.10.2.app"
+if [ -d "$GHC_DOT_APP" ]; then
+  export PATH="${HOME}/.local/bin:${HOME}/.cabal/bin:${GHC_DOT_APP}/Contents/bin:${PATH}"
+fi
+
 # aliases
 alias very='git'
 alias much='git'

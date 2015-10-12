@@ -7,7 +7,7 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="/usr/local/heroku/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin:/usr/texbin"
 
-source ~/bin/git-completion.zsh
+#source ~/bin/git-completion.zsh
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/id_rsa"
