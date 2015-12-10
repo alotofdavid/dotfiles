@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/davidadams/Documents/Berkeley/GSI/sp15'
-let g:netrw_dirhist_2='/Users/davidadams/.vim'
-let g:netrw_dirhist_3='/Users/davidadams/.ssh'
-let g:netrw_dirhist_4='/Users/davidadams/Documents/Berkeley/Junior/CS9E/hw3/images'
-let g:netrw_dirhist_5='/Users/davidadams/Documents/Code/python/rubik'
-let g:netrw_dirhist_6='/Users/davidadams/Documents/Berkeley/Junior/CS161/github/proj3/q0'
