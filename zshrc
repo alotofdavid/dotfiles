@@ -8,6 +8,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/usr/local/heroku/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin:/usr/texbin"
 
 #source ~/bin/git-completion.zsh
+plugins=( zsh-syntax-highlighting )
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/id_rsa"
@@ -26,6 +27,7 @@ alias chrome='open -a "Google Chrome"'
 export CLICOLOR=YES
 export LSCOLORS='ExgxBxcxCxxxxxxxxxxxxx'
 
-
-source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 . `brew --prefix`/etc/profile.d/z.sh
+
+#mactex caveat for zsh users
+eval `/usr/libexec/path_helper -s`

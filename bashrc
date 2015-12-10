@@ -21,5 +21,7 @@ alias sshgsi='ssh cs61c-taf@torus.cs.berkeley.edu'
 alias sshocf='ssh dadams@ssh.ocf.berkeley.edu'
 alias ssh186='ssh cs186-hk@torus.cs.berkeley.edu'
 
+alias vbox186='cd ~/Documents/Berkeley/Senior/CS186/186-vbox/ && vagrant up && vagrant ssh'
+
 alias mars='java -jar mars4_4.jar'
 

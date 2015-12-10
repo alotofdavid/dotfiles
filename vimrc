@@ -17,6 +17,7 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'vim-scripts/lid.vim'
 Plugin 'lervag/vimtex'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'tpope/vim-surround'
 
 
 " All of your Plugins must be added before the following line
@@ -101,8 +102,8 @@ set relativenumber
 set nu
 set cursorline
 set undolevels=20
-set tabstop=4
-set shiftwidth=4
+set tabstop=3
+set shiftwidth=3
 set smarttab
 
 " Window splitting stuff
