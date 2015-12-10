@@ -1,4 +1,7 @@
 TODO
+path
+
+vim/.netrwhist
 vim/bundle/*
 !vim/bundle/Vundle.vim
 *.swp
