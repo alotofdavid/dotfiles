@@ -1,4 +1,5 @@
 
+let mapleader = ","
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -26,6 +27,10 @@ filetype plugin indent on    " required
 
 set expandtab
 set ruler
+set hidden
+set nostartofline
+map <leader>r :source ~/.vimrc<cr>
+set wildchar=<Tab> wildmenu wildmode=full
 
 
 " To ignore plugin indent changes, instead use:
@@ -51,13 +56,13 @@ endif
 nnoremap ; :
 nnoremap : ;
 
-let mapleader = ","
 
 " Tagbar
 nnoremap <Leader>t :TagbarToggle<CR>
 
 syntax enable
 let base16colorspace=256
+set t_Co=256
 set background=dark
 let g:solarized_visibility = "normal"
 let g:solarized_contrast = "normal"
