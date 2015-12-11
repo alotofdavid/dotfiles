@@ -21,6 +21,8 @@
         path: oh-my-zsh
     ~/.zshenv:
          path: zshenv
+    ~/.aliases:
+         path: aliases
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
