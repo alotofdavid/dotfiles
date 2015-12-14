@@ -1,8 +1,11 @@
 # aliases
 
-# git
+### git
 alias very='git'
 alias much='git'
+# abbrevs
+alias gitcheck='git diff --cached'
+alias gst='git status'
 
 # berkeley instructional accounts
 alias ssh61c='ssh cs61c@torus.cs.berkeley.edu'
