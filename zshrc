@@ -22,3 +22,8 @@ if [ -f ~/.bashrc ]; then
   source ~/.bashrc
 fi
 
+# for zsh-completions
+fpath=(/usr/local/share/zsh-completions $fpath)
+
+# must be done at end
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

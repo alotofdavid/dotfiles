@@ -19,6 +19,9 @@ Plugin 'vim-scripts/lid.vim'
 Plugin 'lervag/vimtex'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'tpope/vim-surround'
+Plugin 'toyamarinyon/vim-swift'
+Bundle 'pangloss/vim-javascript'
+Bundle 'mxw/vim-jsx'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -130,6 +133,9 @@ map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 map <Leader>h <Plug>(easymotion-linebackward)
 map <Leader>s <Plug>(easymotion-s2)
+
+" Jsx highlighting in .js files for React
+let g:jsx_ext_required = 0
 
 " Automatic commands
 if has("autocmd")
