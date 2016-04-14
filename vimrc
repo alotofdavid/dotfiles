@@ -122,7 +122,6 @@ if &t_Co > 2 || has("gui_running")
    colorscheme solarized
 endif
 
-
 """ Plugin specific
 " Tagbar
 nnoremap <Leader>t :TagbarToggle<CR>
@@ -152,5 +151,6 @@ if has("autocmd")
 	augroup END
 endif
 
+imap jj <Esc>
 
 
